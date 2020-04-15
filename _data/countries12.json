@@ -1,0 +1,20 @@
+[
+  {
+    "_id": { "$oid": "5e64df56e32425d01536e236" },
+    "country_name": "China",
+    "total_cases": "80,701",
+    "new_cases": " +50 ",
+    "total_deaths": " 3,097 ",
+    "new_deaths": "+27 ",
+    "total_recovered": "57,325 "
+  },
+  {
+    "_id": { "$oid": "5e64df56e32425d01536e237" },
+    "country_name": "S. Korea",
+    "total_cases": "7,313",
+    "new_cases": " +272 ",
+    "total_deaths": " 50 ",
+    "new_deaths": "+2 ",
+    "total_recovered": "130 "
+  }
+]

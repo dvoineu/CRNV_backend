@@ -2,12 +2,12 @@ const express = require('express');
 const morgan = require('morgan');
 const colors = require('colors');
 const dotenv = require('dotenv');
-const errorHandler = require('./middleware/error');
-const logger = require('./middleware/logger');
+// const errorHandler = require('./middleware/error');
 const connectDB = require('./config/db');
 
 // Route files
-const bootcamps = require('./routes/bootcamps');
+// const bootcamps = require('./routes/bootcamps');
+const countries = require('./routes/countries');
 
 // Load env vars
 dotenv.config({ path: './config/config.env' });
@@ -26,10 +26,12 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // Mount routers
-app.use('/api/v1/bootcamps', bootcamps);
+// Add start url
+// app.use('/api/v1/bootcamps', bootcamps);
+app.use('/api/v1/countries', countries);
 
 // This middleware should be at the end in order to work
-app.use(errorHandler);
+// app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
